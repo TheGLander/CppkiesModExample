@@ -4,8 +4,8 @@
 	"description": "A very awesome CC mod!",
 	"private": true,
 	"scripts": {
-		"test_win_chrome": "./testing_tools/run_chrome.bat && npm run host",
-		"test_linux_chrome": "./testing_tools/run_chrome.sh && npm run host",
+		"test_win_chrome": "\"testing_tools/run_chrome.bat\" && npm run host",
+		"test_linux_chrome": "\"testing_tools/run_chrome.sh\" && npm run host",
 		"test_win_firefox": "echo \"Not yet impletemented\"",
 		"test_linux_firefox": "echo \"Not yet impletemented\"",
 		"build": "npx rollup -c",
