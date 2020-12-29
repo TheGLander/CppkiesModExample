@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+	"name": "Simple Cookie Clicker Injector",
+	"version": "1.0.0",
+	"description": "Simple Cookie Clicker Injector. It's basically CCMM (even similar code) but just injecting one mod from localhost. Assets from CCMM as well.",
+	"author": "Bob Varioa",
+	"icons": {
+		"48": "icons/CCMM-48.png",
+		"96": "icons/CCMM-96.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://orteil.dashnet.org/cookieclicker/",
+				"*://orteil.dashnet.org/cookieclicker/beta/",
+				"*://cookieclicker.eu/cookieclicker/",
+				"*://cookieclicker.eu/cookieclicker/beta/"
+			],
+			"js": ["/src/Inject.js"]
+		}
+	],
+	"page_action": {
+		"browser_style": false,
+		"default_icon": "icons/CCMM-48.png",
+		"default_title": "Simple Cookie Clicker Injector",
+		"show_matches": [
+			"*://orteil.dashnet.org/cookieclicker/",
+			"*://orteil.dashnet.org/cookieclicker/beta/",
+			"*://cookieclicker.eu/cookieclicker/",
+			"*://cookieclicker.eu/cookieclicker/beta/"
+		]
+	},
+	"permissions": [
+		"storage",
+		"*://orteil.dashnet.org/cookieclicker/",
+		"*://orteil.dashnet.org/cookieclicker/beta/",
+		"*://cookieclicker.eu/cookieclicker/",
+		"*://cookieclicker.eu/cookieclicker/beta/"
+	]
+	
+}

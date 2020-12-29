@@ -1,0 +1,1 @@
+start "opening chrome" "%programfiles(x86)%\Google\Chrome\Application\chrome.exe\" cookieclicker.eu/cookieclicker/ --remote-debugging-port=9222 --load-extension="%cd%\testing_tools\SimpleCookieClickerInjector\"

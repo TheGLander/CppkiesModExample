@@ -13,3 +13,4 @@ After that, do these simple steps:
   - The `serve` CLI, which you can install via `npm i -g serve`, then you can just do `serve -p 5500`!
   - The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Visual Studio Code extension, which is easily installed, and then you can just click the _"Go live"_ button!
 - After setting up the local server, you can open the console on the cookie clicker website, and type `Game.LoadMod("http://localhost:5500/dist/index.js")`(assuming you are serving on port 5500, change if needed)!
+- Or if you use Chrome, then just run `npm run test_win_chrome` or `npm run test_linux_chrome` depending on your OS. <!--Experimental for Linux, I haven't got a chance to try it out on linux yet but it should work theoretically-->
